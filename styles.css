@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 200px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+#piano {
+    background-color: purple;
+    width: 992px;
+    height: 290px;
+    margin: 100px auto;
+    position: relative;
+    padding: 70px 0 0;
+}
+
+.keys {
+    background-color: black;
+    width: 883px;
+    height: 200px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.key {
+    background-color: white;
+    height: 190px;
+    width: 32px;
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+
+.key.black--key::before {
+    content: "";
+    background-color: black;
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    left: -19px;
+}
+
+@media (max-width: 900px) {
+    #piano {
+        width: 515px;
+    }
+
+    .keys {
+        width: 420px;
+
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
