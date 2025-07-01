@@ -48,17 +48,34 @@ img {
     left: -19px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     #piano {
-        width: 515px;
+        width: 715px;
     }
 
     .keys {
-        width: 420px;
-
+        width: 590px;
+        margin: 0 auto;
     }
 
     .logo {
-        width: 150px;
+        width: 175px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 250px) {
+        #piano {
+        width: 340px;
+    }
+
+    .keys {
+        width: 295px;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        width: 125px;
+        margin-left: -20px;
     }
 }
