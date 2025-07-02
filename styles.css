@@ -46,6 +46,13 @@ img {
     height: 100px;
     position: absolute;
     left: -19px;
+    top: 0;
+}
+
+.key:hover {
+    padding: 0.5px;
+    cursor: pointer;
+    background-color: rgb(202, 202, 202);
 }
 
 @media (max-width: 950px) {
